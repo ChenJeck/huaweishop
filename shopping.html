@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小米商城-购物车</title>
+    <link rel="stylesheet" href="./css/shopping.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <!-- 首部部分 start -->
+    <div class="header">
+      <div class="top_logo w">
+
+        <h2>我的购物车</h2>
+        <div class="top_right">
+          <!-- <a href="lojin.html" target="_blank">登录</a
+          ><span class="sep">|</span> -->
+          <a href="index.html" target="_blank">返回首页</a>
+        </div>
+      </div>
+    </div>
+    <!-- 首部部分 end -->
+    <!-- 中间部分 start -->
+    <div class="middle">
+      <!-- 右侧悬浮工具栏 开始-->
+      <div class="right_float">
+        <a href="#" class="item"></a>
+          <div class="pic pic1"></div>
+          <div class="pic_text">手机APP</div>
+        </a>
+        <a href="#" class="item"
+          ><div class="pic pic2"></div>
+          <div class="pic_text">个人中心</div>
+        </a>
+        <a href="#" class="item"
+          ><div class="pic pic3"></div>
+          <div class="pic_text">售后服务</div>
+        </a>
+        <a href="#" class="item"
+          ><div class="pic pic4"></div>
+          <div class="pic_text">人工客服</div>
+        </a>
+        <a href="#" class="item"
+          ><div class="pic pic5"></div>
+          <div class="pic_text">购物车</div>
+        </a>
+      </div>
+      <!-- 右侧悬浮工具栏 结束 -->
+      <!-- <div class="color"></div> -->
+      <!-- 购物车 -->
+      <div class="shop-box">
+        <table id="cartTable">
+          <thead>
+            <tr>
+              <th>
+                <label>
+                <input class="check-all check" type="checkbox"/>
+                 &nbsp;全选
+                </label>
+              </th>
+              <th>商品</th>
+              <th>单价</th>
+              <th>数量</th>
+              <th>小计</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="foot" id="foot">
+          <label class="fl select-all">
+            <input type="checkbox" class="check-all check" />&nbsp;全选</label
+          >
+          <!-- <a class="fl delete" id="deleteAll" href="javascript:;">删除</a> -->
+          <div class="fr closing">结 算</div>
+          <div class="fr total">
+            合计：￥
+            <span id="priceTotal">0.00</span>
+          </div>
+          <div class="fr selected" id="selected">
+            已选商品 <span id="selectedTotal">0</span>件
+            <!-- <span class="arrow up">︽</span>
+            <span class="arrow down">︾</span> -->
+          </div>
+          <div class="selected-view">
+            <div id="selectedViewList" class="clearfix">
+              <!--<div><img src="images/1.jpg"><span>取消选择</span></div>-->
+            </div>
+            <span class="arrow"
+              >◆
+              <span>◆</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- 为你推荐 -->
+      <div class="shop-goods w">
+        <span>买购物车中商品的人还买了</span>
+        <div class="shop-part2">
+          <ul class="phone_right">
+            <li>
+              <a href="#"
+                ><img src="./images/shopping_middle_goods.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/shopping_middle_goods.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/shopping_middle_goods.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/shopping_middle_goods.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./images/shopping_middle_goods.png" alt="" />
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="color"></div>
+    </div>
+    <!-- 中间部分 end -->
+    <!-- 结尾部分开始 --><!-- 结尾部分结束 -->
+  </body>
+</html>
+<script src="./js/tools.js"></script>
+<script src="./js/cart.js"></script>
